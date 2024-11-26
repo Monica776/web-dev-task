@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="css/lightSlider.css"/>
+    
+    <!-- Include jQuery once -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include lightSlider CSS and JavaScript -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script src="js/lightslider.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="social call">
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>        
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="navigation">
+            <h3>Logo</h3>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="store.html">Men</a><span class="sale-label">Sale</span></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">KIDS</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+           <div class="right-menu">
+                <a href="#" class="search"><i class="fa fa-search"></i></a>
+                <a href="#" class="user"><i class="fa fa-user"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart"><span class="num-cart-product">0</span></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login and Signup Forms -->
+    <div class="form">
+        <!-- Login Form -->
+        <div class="login-form">
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+            <strong>Log In</strong>
+            <form>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="#" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="sign-up-form">
+            <a href="#" class="form-cancel"><i class="fas fa-times"></i></a>
+            <strong>Sign Up</strong>
+            <form>
+                <input type="text" placeholder="Full name" name="fullname" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="form-btns">
+                <a href="#" class="already-account">Already have an Account?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Slider with Overlay -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide-container">
+                <img src="./images/A05 advertising --01.jpg" class="slide" alt="Image 1">
+                <div class="overlay"><div>DISCOUNT OFFER 30% WITH NEW COLLECTION</div></div>
+            </div>
+            <div class="slide-container">
+                <img src="./images/custom-tshirt-design-advertising-sale-banner-flyer-vector.jpg" class="slide" alt="Image 2">
+                <div class="overlay">FANTASTIC DESIGN AND LOW PRICE OFFER ON T-SHIRT FOR MEN AND WOMEN</div>
+            </div>
+            <div class="slide-container">
+                <img src="./images/facebook-ad-image-promoting-t-shirts-1024x536.jpg" class="slide" alt="Image 3">
+                <div class="overlay">BUY ONE GET ONE FREE</div>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <div>
+    <button id="slidedownbtn">Slide Down</button>
+    <button id="slideupbtn">Slide Up</button>
+    <div id="myDiv">Welcome!</div>
+</div>
+<!---------------NEW START-------------->
+<center>
+<div class="NEW">
+<h1>
+    FASHION STORE
+</h1>
+<P>Best men T-shirt up to <span>70%</span> off. New trendy collection </P>
+
+</div>
+</center>
+
+
+    <div class="image-container">
+        <div class="box">
+        <img src="images/OIP (2).jpg" class="image" alt="image1">
+        <p>Men T-shirt 50% offer</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 400.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+    </div>
+    <div class="free">
+        <h3>FREE delivery </h3>
+        <h3 class="cart">add to cart</h3>
+    </div>
+
+    </div>
+    <div class="box">
+        <img src="images/th (2).jpg" class="image" alt="image2">
+        <p>compo offer men t-shirt</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 1200.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <div class="free">
+        <h3>FREE delivery </h3>
+        <h3 class="cart">add to cart</h3>    </div>
+    
+    <div class="click">
+        <i class="fa-solid fa-check">prime</i>
+        </div>
+    </div>
+    <div class="box">
+        <img src="images/th (3).jpg" class="image" alt="image3">
+        <p>blue color T-shirt</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 480.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <div class="free">
+        <h3>FREE delivery </h3>
+        <h3 class="cart">add to cart</h3>    </div>
+    </div>
+    <div class="box">
+        <img src="images/download.jpg" class="image" alt="image4">
+        <p>graphic printed pure cotton</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 390.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <div class="free">
+        <h3>FREE delivery </h3>
+        <h3 class="cart">add to cart</h3>    </div>
+    </div>
+        <div class="box">
+        <img src="images/th (5).jpg"  class="image" alt="image5">
+        <p>Bewakoof Men T-shirt</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 800.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <div class="free">
+        <h3>FREE delivery </h3>
+        <h3 class="cart">add to cart</h3>    </div>
+    </div>
+    <div class="box">
+        <img src="images/OIP (1).jpg"  class="image"alt="image6">
+        <p>Gym T-shirt for men</p>
+        <i class="fa-solid fa-indian-rupee-sign"> 700.00</i>
+        <br>
+        <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <div class="free">
+    <h3>FREE delivery </h3>
+    <h3 class="cart">add to cart</h3></div>
+    <div class="click">
+    <i class="fa-solid fa-check">prime</i>
+    </div>
+</div>
+    
+      </div>
+     
+      <!---------new end-------->
+     
+      <!--------compo offfer--------->
+      <center>
+        <div class="offer">
+        <h1>COMBO OFFER</h1>
+        <P>OFFER OFFER <span>50%</span> BEST ONLINE SHOPPING </P>
+    </div>
+      </center>
+      <div class="product-container">
+      <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (6).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$82.00</span>
+        <h3>FREE delivery</h3>
+      </div>
+      
+      <br>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (9).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$79.00</span>
+        <h3>FREE delivery<span class="limited">limited stock </span></h3>
+              <br>
+              <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+          </div>
+      </div>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (8).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$22.00</span>
+        <h3>FREE delivery</h3>
+              <br>
+              <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+          </div>
+             
+      </div>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (7).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$42.00</span>
+        <h3>FREE delivery <span class="limited">limited stock </span></h3>
+        <div class="click">
+            <i class="fa-solid fa-check">prime</i>
+            </div>
+
+      </div>
+      <br>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (3).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$28.00</span>
+        <h3>FREE delivery</h3>
+        <div class="click">
+            <i class="fa-solid fa-check">prime</i>
+            </div>
+      </div>
+
+      <br>
+      <center>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+</center>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/th (7).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$56.00</span>
+        <h3>FREE delivery <span class="limited">limited stock </span></h3>
+      </div>
+      <br>
+      <center>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+</center>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/th (6).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+              <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+              <span class="p-price">$60.00</span>
+              <h3>FREE delivery <span class="limited">limited stock </span></h3>
+      </div>
+      <br>
+      <center>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+</center>
+       </div>
+       <div class="product-box">
+        <a href="#" class="add-cart">
+            <i class="fa-solid fa-truck"></i>
+        </a>
+        <div class="product-img">
+            <img src="images/OIP (5).jpg" alt="">
+
+        </div>
+     <div class="product-details">
+        <a href="#" class="p-name">OPLU Women's Oversized <br>Cutie Pie Graphic Printed <br>Round Neck Multicolour <br>100% Cotton, Loose <br>Tshirt, Drop Shoulder</a>
+        <span class="p-price">$53.00</span>
+        <h3>FREE delivery <span class="limited">limited stock </span></h3>
+      </div>
+      <br>
+      <center>
+      <div class="star">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+</center>
+       </div>
+       </div>
+            <!--------compo offfer--------->
+            <!-------------sale start-->
+            <center>
+                <div class="womens">
+                    <div class="women-bag">
+                    <h1>WOMENs FASHION</h1>
+                    <p>Shopping for fashion clothing for women like womens shirts, jeans, kurtas and designer sarees.</p>
+
+                    </div>
+
+                </div>
+            </center>
+             <section class="sale flex">
+              <div class="sale-box">
+                <img src="images/OIP (11).jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bag with rose pattern</strong>
+                           <span class="sales">Sale off 25%</span>
+                    </div>
+                </a>
+              </div>
+              <div class="sale-box">
+                <img src="images/OIP (13).jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bangle set for women</strong>
+                           <span class="sales">Sale off 45%</span>
+                    </div>
+                </a>
+              </div>
+              <div class="sale-box">
+                <img src="images/OIP (14).jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bluefusion liquid lipstick</strong>
+                           <span class="sales">Sale off 35%</span>
+                    </div>
+                </a>
+              </div>
+              <div class="sale-box">
+                <img src="images/OIP (15).jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Eyeshadow best</strong>
+                           <span class="sales">Sale off 20%</span>
+                    </div>
+                </a>
+              </div>
+              <div class="sale-box">
+                <img src="images/OIP (12).jpg" alt="">
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bag with brown pattern</strong>
+                           <span class="sales">Sale off 25%</span>
+                    </div>
+                </a>
+              </div>
+             </section>
+             <center>
+                <div class="kids">
+             <h1>KIDS SECTION</h1>
+            </div>
+            </center>
+             <div class="img-marq">
+                <marquee behaviour="alternate" direction="" scrollamount="30">
+                <img src="images/download (3).jpg" alt="">
+                <img src="images/download (1).jpg">
+                <img src="images/download (2).jpg" alt="">
+                <img src="images/download (4).jpg" alt="">
+                <img src="images/OIP (18).jpg" alt="">
+                <img src="images/OIP (20).jpg" alt="">
+                <img src="images/OIP (21).jpg" alt="">
+                <img src="images/OIP (22).jpg" alt="">
+                <img src="images/OIP (23).jpg" alt="">
+                
+                <img src="images/download (4).jpg" alt="">
+                <img src="images/download (6).jpg" alt="">
+                <img src="images/download (7).jpg" alt="">
+                </marquee>
+                </div>
+            <!---------sale end-------->
+        
+           <!-------footer start-------->
+          <!-- Footer Links Section 1 -->
+           <!---CENTER>
+          <div class="footer-line">
+            <h2>FASHION SHOW</h2>
+            <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
+        </div>
+    </CENTER!--->
+          
+           <center>
+                        <div class="footer">
+                            <div class="container flex">
+                                <div class="row">
+                                    <!-- Footer About Section -->
+                                     
+                                    
+                              
+                                    <!-- Footer Links Section 1 -->
+                                  
+                                    <div class="footer-head">
+                                        <h2>SHOP</h2>
+                                        <div class="footer-link">
+                                            <p>gift card</p>
+                                            <p>drinks</p>
+                                            <p>share locater</p>
+                                            <p>saree</p>
+                                            <p>about us</p>
+                                        </div>
+                                    </div>
+                              
+                                    <!-- Footer Links Section 2 -->
+                                    <div class="footer-head">
+                                        <h2>HELP</h2>
+                                        <div class="footer-link">
+                                            <p>delivery</p>
+                                            <p>return</p>
+                                            <p>track on order</p> 
+                                            <p>payments</p>
+                                            <p>Contact us</p>
+                                        </div>
+                                    </div>
+                              
+
+
+                                     <!-- Footer Links Section 2 -->
+                                     <div class="footer-head">
+                                        <h2>CONTACT US</h2>
+                                        <div class="footer-link">
+                                            <p>career</p>
+                                            <p>terms & condition</p>
+                                            <p>privacy policy</p>
+                                            <p>Support</p> 
+                                        </div>
+                                    </div>
+                                    <!-- Footer Contact Info -->
+                                    <div class="footer-head">
+                                        <h2>address</h2>
+                                        <p>123 Grand Rama IX,<br> Krung Thep Maha Nakhon 10400 <br>trichy <br>60002
+                                        </p>
+                                    </div>
+                                      
+                                    <div>
+                                        <input type="text">
+
+                                    </div>
+                              
+                                </div> <!-- End of row -->
+                            </center>
+
+                               
+                  
+       <!----- footer end------>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js">
+        
+    </script>
+
+  
+</body>
+</html>

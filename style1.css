@@ -1,0 +1,97 @@
+
+h1{
+    color: rgb(48, 48, 205);
+   
+
+}
+h1:hover{
+    color: rgb(129, 11, 11);
+    
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+
+}
+.product-box{
+    display: flex;
+    flex-grow: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ebf2f4;
+    border-radius: 10px;
+    margin: 20px;
+  
+}
+.product-box{
+    display: flex;
+    flex-grow: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #757a7a;
+    border-radius: 10px;
+    margin: 20px;
+}
+.men-store{
+    margin: 20px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 260px;
+    height: 200px;
+    overflow:visible; /* Prevents the image from spilling out of the container */
+    position: relative;
+    margin: 20px;
+}
+.zoom-image {
+    width: 100%;
+    height: 100%;
+    transition-duration: transform 1.3s all; /* Smooth zoom transition */
+    transition-delay: 0.3s;
+}
+
+/* Zoom in effect on hover */
+.men-store:hover .zoom-image {
+    transform: scale(1.2); /* Zoom in by 1.5 times */
+}
+.men-store img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.product-details{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    
+}
+.p-name{
+    color: #3c1bc1;
+    font-size: 1.3rem;
+}
+.p-name:hover{
+    color: rgb(4, 4, 17);
+}
+.p-price{
+    color: #058307;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.p-price:hover{
+    color: rgb(214, 55, 19);
+}
+
+
+.product-box:hover{
+    box-shadow: 2px 2px 30px rgb(40, 34, 34);
+}
